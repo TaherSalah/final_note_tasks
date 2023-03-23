@@ -1,0 +1,62 @@
+name: new_task
+description: A new Flutter project.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.18.6 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons:
+  hive:
+  hive_flutter:
+  flutter_bloc:
+  intl:
+  flutter_slidable:
+  flutter_progress_hud:
+  modal_progress_hud_nsn:
+  flutter_settings_screens:
+  babstrap_settings_screen:
+  fluttertoast:
+  shared_preferences:
+  simple_animations:
+  google_nav_bar:
+  flutter_screenutil:
+  flutter_feather_icons:
+  google_fonts:
+  hexcolor:
+  about:
+  url_launcher:
+  flutter_rating_bar:
+  cached_network_image:
+  flutter_conditional_rendering:
+  table_calendar:
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  hive_generator:
+  build_runner:
+  flutter_lints:
+
+
+  flutter_launcher_icons:
+flutter_icons:
+  ios: true
+  android: true
+  image_path: "assets/images/appIcon.png"
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/images/guides/
+  fonts:
+    - family: cairo
+      fonts:
+        - asset: assets/fonts/cairo/Cairo-Bold.ttf
+        - asset: assets/fonts/cairo/Cairo-Light.ttf
+
