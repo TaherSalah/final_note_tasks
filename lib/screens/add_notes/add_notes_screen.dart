@@ -65,28 +65,28 @@ class _AddNotesFormState extends State<AddNotesForm> {
               Column(
                 children: [
                   const SizedBox(
-                    height: 10,
+                    height: 10
                   ),
                   Container(
                     height: 3,
                     width: 30,
-                    color: Colors.red,
+                    color: Colors.red
                   ),
                   const SizedBox(
-                    height: 3,
+                    height: 3
                   ),
                   Container(
                     height: 3,
                     width: 50,
-                    color: Colors.amber,
+                    color: Colors.amber
                   ),
                   const SizedBox(
-                    height: 3,
+                    height: 3
                   ),
                   Container(
                     height: 3,
                     width: 30,
-                    color: Colors.red,
+                    color: Colors.red
                   ),
                 ],
               ),
@@ -190,3 +190,120 @@ class _AddNotesFormState extends State<AddNotesForm> {
     );
   }
 }
+
+// class TrainingDialog extends StatelessWidget {
+//   const TrainingDialog({super.key});
+//
+//   @override
+//   Widget build(BuildContext context) {
+//     var screenSize = MediaQuery.of(context).size;
+//     final screenWidth = MediaQuery.of(context).size.width;
+//     return Dialog(
+//       backgroundColor: Theme.of(context).cardColor,
+//       insetPadding: EdgeInsets.symmetric(horizontal: 15),
+//       shape: RoundedRectangleBorder(
+//         borderRadius: BorderRadius.circular(20.0),
+//       ),
+//       child: Container(
+//         padding: EdgeInsets.symmetric(horizontal: 15, vertical: 20),
+//         width: screenSize.width,
+//         height:screenWidth<600? screenSize.height * 0.6:screenSize.height * 0.4,
+//         child: Column(
+//           mainAxisSize: MainAxisSize.min,
+//           crossAxisAlignment: CrossAxisAlignment.start,
+//           mainAxisAlignment: MainAxisAlignment.spaceBetween,
+//           children: <Widget>[
+//             Center(
+//               child: TextWidget(
+//                 title: 'قبل أن تبدأ',
+//                 fontWeight: FontWeight.w600,
+//                 fontSize: ResponsiveUtil.isTablet(context)?11.5.sp: 14.5.sp,
+//               ),
+//             ),
+//             const SizedBox(height: 16.0),
+//             _buildChecklistItem(
+//                 'انتبه للوقت، وحاول أن تنتهي من إجاباتك قبل نهاية الوقت',context),
+//             _buildChecklistItem('اقرأ الأسئلة وفكر جيداً، ثم أجب',context),
+//             _buildChecklistItem('افعل كل ما في وسعك للإجابة على كل الأسئلة',context),
+//             _buildChecklistItem(
+//                 'إذا لم تستطع الإجابة على السؤال يمكنك أن تخطيه والانتقال إلى السؤال التالي',context),
+//             _buildChecklistItem('التأكد من اتصال حاسوبك الخاص بك بالإنترنت.',context),
+//             _buildChecklistItem(
+//                 'نتيجة الاختبار تظهر لك تلقائيا بعد الانتهاء من الإجابة على كافة الأسئلة وتأكبد تقديم الإجابة',context),
+//             _buildChecklistItem(
+//                 'في التدريب يمكنك الحصول على التغذية الراجعة لمعرفة إجاباتك الصحيحة والخطأ',context),
+//             _buildChecklistItem(
+//                 'في التدريب أيضا يمكنك عرض [شرح الإجابة] لكل سؤال',context),
+//             const SizedBox(height: 16.0),
+//             Row(
+//               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+//               children: [
+//                 ButtonsWidgets.defButton(
+//                     onTap: () {
+//                       Navigator.pushNamed(context, Routes.questionRoute,
+//                           arguments: examId);
+//                       KStorage.i.setIsTraining(false);
+//                     },
+//                     buttonPadding:
+//                     EdgeInsets.symmetric(vertical: 10.h, horizontal: 30.w),
+//                     backgroundColor: KColors.greenColor,
+//                     context: context,
+//                     borderRadius: BorderRadius.circular(10.r),
+//                     titleColor: KColors.whiteColor,
+//                     fontSize: ResponsiveUtil.isTablet(context)?10.sp: 13.sp,
+//                     fontWeight: FontWeight.w500,
+//                     btnTitle: 'ابدأ الاختبار'),
+//                 ButtonsWidgets.defButton(
+//                     onTap: () {
+//                       Navigator.pushNamed(context, Routes.trainingRoute,
+//                           arguments: examId);
+//                       KStorage.i.setIsTraining(true);
+//                     },
+//                     buttonPadding:
+//                     EdgeInsets.symmetric(vertical: 10.h, horizontal: 30.w),
+//                     backgroundColor: KColors.transparentColor,
+//                     context: context,
+//                     borderColor: KColors.blackColor,
+//                     borderRadius: BorderRadius.circular(10.r),
+//                     titleColor: KColors.primary,
+//                     fontWeight: FontWeight.w500,
+//                     fontSize:ResponsiveUtil.isTablet(context)?10.sp: 13.sp,
+//                     btnTitle: 'تدرب أولاً'),
+//               ],
+//             ),
+//           ],
+//         ),
+//       ),
+//     );
+//   }
+//
+//   Widget _buildChecklistItem(String text ,BuildContext context) {
+//     final screenWidth = MediaQuery.of(context).size.width;
+//
+//     return Padding(
+//       padding: const EdgeInsets.only(bottom: 8.0),
+//       child: Row(
+//         crossAxisAlignment: CrossAxisAlignment.start,
+//         mainAxisAlignment: MainAxisAlignment.start,
+//         children: <Widget>[
+//           Expanded(
+//             child: TextWidget(
+//               title: text,
+//               fontWeight: FontWeight.w400,
+//               fontSize: screenWidth<600?12.5.sp:10.sp,
+//               textAlign: TextAlign.right, // Align text to the right
+//             ),
+//           ),
+//           const SizedBox(width: 8.0),
+//           Icon(
+//             Icons.check_circle,
+//             color: KColors.greenColor.withOpacity(0.5),
+//             size: 14.sp,
+//           ),
+//         ],
+//       ),
+//     );
+//   }
+// }
+
+

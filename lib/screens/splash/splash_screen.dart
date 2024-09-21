@@ -16,8 +16,8 @@ class _SplashScreenState extends State<SplashScreen> {
     super.initState();
     Timer(
         const Duration(seconds: 3),
-        () => Navigator.pushReplacement(
-            context, MaterialPageRoute(builder: (context) => const HomeScreen())));
+        () => Navigator.pushReplacement(context,
+            MaterialPageRoute(builder: (context) => const HomeScreen())));
   }
 
   @override
@@ -35,8 +35,8 @@ class _SplashScreenState extends State<SplashScreen> {
               children: [
                 Image.asset(
                   'assets/images/logo.png',
-                  height: 400.0,
-                  width: 300.0,
+                  height: 150.0,
+                  width: 150.0,
                 ),
               ],
             ),
@@ -46,9 +46,15 @@ class _SplashScreenState extends State<SplashScreen> {
                   color: Colors.black,
                   fontWeight: FontWeight.bold,
                   fontFamily: 'cairo',
-                  fontSize: 30),
+                  fontSize: 25),
             ),
-            const SizedBox(height:50,width:50,child: CircularProgressIndicator(color: Colors.amber,strokeWidth: 10,)),
+            const SizedBox(
+                height: 30,
+                width: 30,
+                child: CircularProgressIndicator(
+                  color: Colors.amber,
+                  strokeWidth: 5,
+                )),
           ],
         ),
       ),
